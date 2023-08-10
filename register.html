@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- estilos del registro -->
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="register-container">
+        <div class="logo"></div>
+        <h2 class="text-center">Registro</h2>
+        <form method="POST" action="register.php">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="nombre"
+              placeholder="Ingrese su nombre"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Dirección</label>
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              name="direccion"
+              placeholder="Ingrese su dirección"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="correo_electronico"
+              placeholder="Ingrese su correo electrónico"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="contrasena"
+              placeholder="Ingrese su contraseña"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            name="registrar"
+            class="btn btn-primary btn-block"
+          >
+            Registrarse
+          </button>
+        </form>
+        <p class="text-center mt-3">
+          ¿Ya tienes una cuenta? <a href="login.html">Iniciar sesión</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
