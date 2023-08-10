@@ -1,0 +1,21 @@
+/* Estilos personalizados para el navbar */
+.navbar-custom {
+  background-color: black;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+  color: white;
+  font-style: italic;
+}
+
+.navbar-custom .cart-icon {
+  color: white;
+}
+
+.navbar-custom .profile-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+}

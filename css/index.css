@@ -1,0 +1,54 @@
+.card {
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: scale(
+    0.9
+  ); /* Inicialmente, el overlay estará ligeramente más pequeño */
+}
+
+.card-overlay-text {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+  transform: scale(
+    1
+  ); /* Cuando se hace hover, el overlay se muestra en su tamaño original */
+}

@@ -1,0 +1,41 @@
+.card {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  /* Agrega la transición para el efecto de movimiento */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  /* Aplica la transformación de movimiento hacia arriba al pasar el cursor */
+}
+
+.update-btn {
+  position: absolute;
+  top: -10px;
+  /* Ajusta la posición vertical del botón */
+  right: -10px;
+  /* Ajusta la posición horizontal del botón */
+  width: 24px;
+  height: 24px;
+  background-color: #ccc;
+  /* Cambia el color de fondo a gris */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  /* Asegura que el botón aparezca encima de la imagen */
+  transition: transform 0.3s ease-in-out;
+  /* Agrega la transición para el efecto de movimiento */
+}
+
+.update-btn:hover {
+  transform: rotate(360deg);
+  /* Agrega la rotación en el efecto de movimiento */
+}
+
+.card:hover .update-btn {
+  transform: rotate(360deg);
+  /* Asegura que el botón de actualización siga girando al aplicar el efecto de movimiento a la card */
+}

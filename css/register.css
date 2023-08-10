@@ -1,0 +1,38 @@
+body {
+  background-color: #f1f2f1;
+  color: #000;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+}
+
+.register-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  margin-top: 50px;
+  border: none;
+}
+
+.logo {
+  background-image: url(../img/logo.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #111;
+  border-color: #111;
+}
