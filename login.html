@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Librerias de sweetalert 2-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- css del login -->
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <!-- alertas del login -->
+    <script src="js/alertas.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-container">
+        <div class="logo"></div>
+        <h2 class="text-center">Iniciar sesión</h2>
+        <form method="POST" action="login.php">
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              name="correo_electronico"
+              id="email"
+              placeholder="Ingrese su correo electrónico"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              name="contrasena"
+              id="password"
+              placeholder="Ingrese su contraseña"
+              required
+            />
+          </div>
+          <button type="submit" name="enviar" class="btn btn-primary btn-block">
+            Iniciar sesión
+          </button>
+        </form>
+        <p class="text-center mt-3">
+          ¿No tienes una cuenta? <a href="register.html">Regístrate</a>
+        </p>
+        <p class="text-center mt-3">
+          ¿Olvidaste tu contraseña? <a href="forgottenPassword.html">Recupérala</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
